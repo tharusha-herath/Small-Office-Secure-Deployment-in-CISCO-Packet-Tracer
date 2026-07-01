@@ -49,7 +49,6 @@ Gateway of last resort is not set
      192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
 C       192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
 L       192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
-**
 ```
 3. Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)**
 
