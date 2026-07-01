@@ -34,6 +34,7 @@ Vlan1                  unassigned      YES unset  administratively down down
 ```
 **2. Active Routing Table Core (show ip route)**
 
+```
 COLOMBO-EDGE-RTR#show ip route
 Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
        D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
@@ -49,8 +50,10 @@ Gateway of last resort is not set
 C       192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
 L       192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
 **
+```
 3. Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)**
 
+```
 C:\>ping 192.168.10.10
 
 Pinging 192.168.10.10 with 32 bytes of data:
@@ -64,3 +67,4 @@ Ping statistics for 192.168.10.10:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 Approximate round trip times in milli-seconds:
     Minimum = 26ms, Maximum = 37ms, Average = 32ms
+```
