@@ -21,9 +21,8 @@ The following enterprise staging protocols were deployed via the Cisco IOS CLI t
 * **Credential Protection:** Activated `service password-encryption` to scramble plain-text configuration strings within device memory.
 * **Access Compliance:** Deployed official Message of the Day (`banner motd`) banners to comply with enterprise access standards.
 
-## 🧪 Verification Logs & Operational Evidence
-
 ### 1. Gateway Status Matrix (`show ip interface brief`)
+```text
 Interface              IP-Address      OK? Method Status                Protocol 
 GigabitEthernet0/0/0   192.168.10.1    YES manual up                    up 
 GigabitEthernet0/0/1   unassigned      YES unset  administratively down down 
