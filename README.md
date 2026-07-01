@@ -21,7 +21,7 @@ The following enterprise staging protocols were deployed via the Cisco IOS CLI t
 * **Credential Protection:** Activated global `service password-encryption` to scramble plain-text configuration strings stored within device running memory.
 * **Access Compliance:** Deployed an official Message of the Day (`banner motd`) boundary notification to comply with standard legal and organizational information security practices.
 
-## 🧪 Verification Logs & Operational Evidence
+## Verification Logs & Operational Evidence
 
 ### 1. Gateway Status Matrix (`show ip interface brief`)
 ```text
@@ -32,7 +32,7 @@ GigabitEthernet0/0/1   unassigned      YES unset  administratively down down
 GigabitEthernet0/0/2   unassigned      YES unset  administratively down down 
 Vlan1                  unassigned      YES unset  administratively down down
 ```
-2. Active Routing Table Core (show ip route)
+**2. Active Routing Table Core (show ip route)**
 
 COLOMBO-EDGE-RTR#show ip route
 Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
@@ -48,8 +48,8 @@ Gateway of last resort is not set
      192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
 C       192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
 L       192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
-
-Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)
+**
+3. Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)**
 
 C:\>ping 192.168.10.10
 
