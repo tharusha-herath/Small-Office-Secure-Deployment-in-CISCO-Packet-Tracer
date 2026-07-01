@@ -31,3 +31,36 @@ GigabitEthernet0/0/0   192.168.10.1    YES manual up                    up
 GigabitEthernet0/0/1   unassigned      YES unset  administratively down down 
 GigabitEthernet0/0/2   unassigned      YES unset  administratively down down 
 Vlan1                  unassigned      YES unset  administratively down down
+```
+2. Active Routing Table Core (show ip route)
+
+COLOMBO-EDGE-RTR#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     192.168.10.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
+L       192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
+
+Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)
+
+C:\>ping 192.168.10.10
+
+Pinging 192.168.10.10 with 32 bytes of data:
+
+Reply from 192.168.10.10: bytes=32 time=36ms TTL=127
+Reply from 192.168.10.10: bytes=32 time=31ms TTL=127
+Reply from 192.168.10.10: bytes=32 time=37ms TTL=127
+Reply from 192.168.10.10: bytes=32 time=26ms TTL=127
+
+Ping statistics for 192.168.10.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 26ms, Maximum = 37ms, Average = 32ms
