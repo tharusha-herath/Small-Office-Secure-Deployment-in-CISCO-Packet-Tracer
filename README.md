@@ -24,7 +24,7 @@ The following enterprise staging protocols were deployed via the Cisco IOS CLI t
 ## 🧪 Verification Logs & Operational Evidence
 
 ### 1. Gateway Status Matrix (`show ip interface brief`)
-COLOMBO-EDGE-RTR#show ip interface brief
+
 Interface              IP-Address      OK? Method Status                Protocol 
 GigabitEthernet0/0/0   192.168.10.1    YES manual up                    up 
 GigabitEthernet0/0/1   unassigned      YES unset  administratively down down 
