@@ -50,7 +50,7 @@ Gateway of last resort is not set
 C       192.168.10.0/24 is directly connected, GigabitEthernet0/0/0
 L       192.168.10.1/32 is directly connected, GigabitEthernet0/0/0
 ```
-3. Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)**
+**3. Cross-Subnet End-to-End Connectivity (Wireless Endpoint to Core Server)**
 
 ```
 C:\>ping 192.168.10.10
